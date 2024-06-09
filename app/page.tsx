@@ -7,9 +7,9 @@ import { faker } from "@faker-js/faker";
 const NAME = faker.person.firstName();
 
 export default function App() {
-  const messages = useQuery(api.messages.list);
-  const sendMessage = useMutation(api.messages.send);
-  const addLike = useMutation(api.messages.like);
+  const messages = useQuery(api.functions.messages.list);
+  const sendMessage = useMutation(api.functions.messages.send);
+  const addLike = useMutation(api.functions.messages.like);
 
   const [newMessageText, setNewMessageText] = useState("");
 
